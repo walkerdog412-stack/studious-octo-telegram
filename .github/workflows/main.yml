@@ -1,21 +1,21 @@
-name: TESTING
+name: Rem
 
 on:
   workflow_dispatch:
 
 jobs:
   build:
-    name: testtttt
-    runs-on: windows-2025
+    name: this
+    runs-on: windows-2022
     
     steps:
-      - name: ESSENTIALS
+      - name: Essentials
         run: |
           Invoke-WebRequest -Uri "https://gitlab.com/candycane2/lite_manager_win/raw/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
-      - name: TRY
+      - name: log
         run: cmd /c show.bat
 
-      - name: TIMER
+      - name: clock
         run: cmd /c loop.bat
